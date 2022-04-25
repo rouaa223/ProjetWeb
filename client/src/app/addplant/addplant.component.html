@@ -1,0 +1,48 @@
+<section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1280" data-image-height="853" id="sec-36e8">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-text u-text-default u-title u-text-1">Admin Space</h1>
+      <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Add a plant</p>
+    </div>
+  </section>
+  <section class="u-clearfix u-section-2" id="carousel_0609">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+              <div class="u-container-layout u-valign-top u-container-layout-1">
+                <h3 class="u-text u-text-default u-text-1">Add a plant</h3>
+                <div class="u-expanded-width u-form u-form-1">
+                  <form  [formGroup]="addplantForm" (ngSubmit)="onSubmit()" method="post" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" name="form">
+                    <div class="u-form-group u-form-name">
+                      <label for="nameplant" class="u-label">Plant</label>
+                      <input type="text" placeholder="name of the plant" formControlName="nameplant" id="nameplant" name="nameplant" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white" required="">
+                    </div>
+                    <div class="u-form-email u-form-group">
+                      <label for="priceplant" class="u-label">price</label>
+                      <input type="text" placeholder="Enter a valid price" formControlName="priceplant" id="priceplant" name="priceplant" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white" required="">
+                    </div>
+                    <div class="u-form-group u-form-message">
+                      <label for="descriptionplant" class="u-label">description</label>
+                      <textarea placeholder="plant description " rows="4" cols="50" id="descriptionplant" formControlName="descriptionplant" name="descriptionplant" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white" required=""></textarea>
+                    </div>
+                    <div class="u-form-group u-form-group-4">
+                      <label for="photolink" class="u-label">photo</label>
+                      <input type="text" placeholder="photo link" id="photolink" formControlName="photolink" name="photolink" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white">
+                    </div>
+                    <button class="u-align-left u-form-group u-form-submit u-active-palette-1-light-2 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-12 u-btn-1" >add to database</button>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-layout-cell u-radius-20 u-size-30 u-layout-cell-2" data-animation-name="fadeIn" data-animation-duration="1500" data-animation-direction="Right" data-animation-delay="500">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <img class="u-image u-image-1" src="assets/images/product-image.png" data-image-width="1600" data-image-height="1600">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

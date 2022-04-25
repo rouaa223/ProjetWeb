@@ -1,0 +1,29 @@
+<section class="u-align-left u-clearfix u-image u-shading u-section-18" src="" data-image-width="1280" data-image-height="903" id="sec-98d7">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <h1 class="u-text u-text-default u-title u-text-1">Welcome to our store</h1>
+    <p class="u-large-text u-text u-text-variant u-text-2">Here, you'll find different types of plants!</p>
+    <a href="#" class="u-border-none u-btn u-button-style u-custom-color-1 u-btn-1">see plants</a>
+  </div>
+</section>
+<section class="u-align-center u-clearfix u-section-28" id="carousel_523f">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h6 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Store</h6>
+    <h2 class="u-custom-font u-font-montserrat u-text u-text-2">Check our store!</h2>
+    <div class="u-expanded-width u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        <div *ngFor="let plant of plants" class="card u-container-style u-list-item u-radius-30 u-repeater-item u-shape-round u-white u-list-item-1">
+          <div  class="u-container-layout u-similar-container u-container-layout-1">
+            <img class="u-image u-image-default u-image-1" src='{{plant.photolink}}' alt="" data-image-width="1280" data-image-height="853">
+            <h4 class="u-custom-font u-font-montserrat u-text u-text-custom-color-1 u-text-default u-text-3">{{plant.priceplant}}</h4>
+            <div class="u-border-2 u-border-grey-25 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+            <p class="u-text u-text-palette-1-dark-2 u-text-4">{{plant.descriptionplant}}</p>
+            <a  class="u-active-palette-1-light-3 u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-item u-hover-palette-1-light-3 u-radius-50 u-text-custom-color-2 u-btn-1">{{plant.nameplant}}</a>
+          </div>
+        </div>
+        
+        
+    </div>
+    </div>
+    </div>
+</section>
+

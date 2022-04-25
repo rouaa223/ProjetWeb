@@ -1,0 +1,67 @@
+<section class="u-align-center u-clearfix u-image u-section-16" id="carousel_048e" data-image-width="1280" data-image-height="853">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-custom-color-3 u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-container-style u-group u-radius-50 u-shape-round u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-align-center u-custom-font u-font-montserrat u-text u-text-1">Order a plant</h2>
+          <div class="u-form u-form-1">
+            <form [formGroup]="orderForm" (ngSubmit)="onSubmit()" method="post" class="u-clearfix u-form-spacing-13 u-form-vertical u-inner-form" style="padding: 0;" source="email" name="form">
+              <div class="u-form-group u-form-name u-form-partition-factor-2 u-label-top">
+                <label for="namepurchase" class="u-label u-label-1">Name</label>
+                <input type="text" placeholder="Enter your Name" formControlName="namepurchase" id="namepurchase" name="namepurchase" class="u-grey-5 u-input u-input-rectangle u-input-1" required="">
+              </div>
+              <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-2">
+                <label for="citypurchase" class="u-label u-label-2">City</label>
+                <input type="text" placeholder="type your city" id="citypurchase" formControlName="citypurchase" name="citypurchase" class="u-grey-5 u-input u-input-rectangle u-input-2" required="required">
+              </div>
+              <div class="u-form-email u-form-group u-label-top">
+                <label for="adresspurchase" class="u-label u-label-3">Address</label>
+                <input type="text" placeholder="write a detailed address" formControlName="adresspurchase" id="adresspurchase" name="adresspurchase" class="u-grey-5 u-input u-input-rectangle u-input-3" required="">
+              </div>
+              <div class="u-form-group u-form-phone u-label-top u-form-group-4">
+                <label for="phonepurchase" class="u-label u-label-4" wfd-invisible="true">Phone</label>
+                <input type="tel" formControlName="phonepurchase" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +21612121212)" id="phonepurchase" name="phonepurchase" class="u-grey-5 u-input u-input-rectangle u-input-4" required="">
+              </div>
+              <div class="u-form-group u-form-select u-label-top u-form-group-5">
+                <label for="select-c4db" class="u-label u-label-5">plante</label>
+                <div class="u-form-select-wrapper">
+                  <select  id="nameplant" formControlName="plantpurchase" name="nameplant" class="u-grey-5 u-input u-input-rectangle u-input-5" required="required">
+                    <option *ngFor="let plant of plants"  value="{{plant.nameplant}}">{{plant.nameplant}}</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                </div>
+              </div>
+              <div class="u-form-group u-form-message u-label-top u-form-group-6">
+                <label for="emailpurchase" class="u-label u-label-6">Email</label>
+                <input type="text" placeholder="write a detailed address" formControlName="emailpurchase" id="emailpurchase" name="emailpurchase" class="u-grey-5 u-input u-input-rectangle u-input-3" required="">
+              </div>
+              <div class="u-form-group u-form-radiobutton u-label-top u-form-group-7">
+                <div class="u-form-radio-button-wrapper">
+                  <label for="paymentpurchase" class="u-label u-label-2">Choose Your Payment Card</label>
+                  <br>
+                  <br>
+                  <input type="radio" formControlName="paymentpurchase" name="paymentpurchase" value="MasterCard" required="required">
+                  <label class="u-label"  for="paymentpurchase">MasterCard</label>
+                  <br>
+                  <input type="radio" formControlName="paymentpurchase" name="paymentpurchase" value="Visa" required="required">
+                  <label class="u-label"  for="paymentpurchase">Visa</label>
+                  <br>
+                </div>
+              </div>
+              <div class="u-form-email u-form-group u-label-top">
+                <label for="cardpurchase" class="u-label u-label-3">Card Number</label>
+                <input type="text" placeholder="write a detailed address" id="cardpurchase" formControlName="cardpurchase" name="cardpurchase" class="u-grey-5 u-input u-input-rectangle u-input-3" required="">
+              </div>
+              <div class="u-align-center u-form-group u-form-submit u-label-top">
+                <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1">Purchase</a>
+                <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
+              </div>
+              <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
